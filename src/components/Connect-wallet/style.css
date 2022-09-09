@@ -1,0 +1,182 @@
+.btn-connect {
+  margin: 0px 20px;
+  width: 165px;
+  height: 50px;
+  background: linear-gradient(275.2deg, #37abff 1.74%, #8a3ffc 97.49%),
+    radial-gradient(
+      63.11% 63.11% at 31.97% 19.67%,
+      rgba(255, 255, 255, 0.7) 0%,
+      rgba(255, 255, 255, 0) 69.79%,
+      rgba(255, 255, 255, 0) 100%
+    ),
+    #2f80ed;
+  display: flex;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+  border: none;
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 110%;
+}
+.btn-connect:hover {
+  opacity: 0.98;
+  box-shadow: 0px 3px 4px 2px rgba(55, 171, 255, 0.3);
+}
+.btn-connect:active {
+  transform: translateY(2px);
+}
+.Connect-Wapper {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(5px);
+  overflow: hidden;
+}
+.connect-wallet {
+  width: 0%;
+  height: 0%;
+  max-width: 500px;
+  max-height: 400px;
+  background: linear-gradient(275.2deg, #008eff 1.74%, #9b3af3 97.49%),
+    radial-gradient(
+      63.11% 63.11% at 31.97% 19.67%,
+      rgba(255, 255, 255, 0.7) 0%,
+      rgba(255, 255, 255, 0) 69.79%,
+      rgba(255, 255, 255, 0) 100%
+    ),
+    #006dff;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: absolute;
+  right: 0%;
+  top: 0%;
+  overflow: hidden;
+  transition: all 0.4s linear;
+  padding: 10px;
+}
+.connect-Wallet-active {
+  right: 50%;
+  top: 50%;
+  transform: translateX(50%) translateY(-50%);
+  width: 500px;
+  height: 400px;
+  position: absolute;
+  transition: all 0.4s linear;
+}
+.connectWallet_container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.connect-wallet .ant-modal-content {
+  border-radius: 10px !important;
+  background: transparent !important;
+}
+.connect-wallet .ant-modal-header {
+  background: #14232f !important;
+  border-top-left-radius: 10px !important;
+  border-top-right-radius: 10px !important;
+  border-bottom: 1px solid #f0f0f036;
+  padding: 24px 24px;
+}
+.connect-wallet .ant-modal-footer {
+  display: none;
+  background: #14232f !important;
+  border-bottom-left-radius: 10px !important;
+  border-bottom-right-radius: 10px !important;
+}
+
+.connect-wallet .ant-modal-body {
+  background: #14232f !important;
+  border-radius: 0px 0 10px 10px;
+}
+.connect-wallet-title {
+  width: 100%;
+  text-align: center;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 33px;
+  color: #17f1ff;
+  font-family: RALEWAYMEDIUM;
+  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
+}
+.wallet-item {
+  width: 48%;
+  display: inline-block;
+  align-items: center;
+  padding: 10px;
+  height: 68px;
+  transition: all 0.2s linear;
+  border-radius: 10px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.wallet-item:hover {
+  background: linear-gradient(0deg,#3ea2ff 0%,#7743e6 100%);
+}
+.wallet-flex {
+  display: flex;
+}
+.wallet-flex .item-text {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 22px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 1px;
+  color: #fffdfd;
+}
+.ant-modal-wrap {
+  background: linear-gradient(
+    107.15deg,
+    rgba(23, 241, 255, 0.2) 0%,
+    rgba(67, 255, 129, 0.2) 100%
+  ) !important;
+  backdrop-filter: blur(35px) !important;
+  /* z-index: 2000; */
+}
+.noti-out-text {
+  font-weight: 500;
+  text-align: center;
+  font-size: 22px;
+  color: #fffdfd;
+  padding-bottom: 20px;
+}
+.noti-out-button {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+@media screen and (max-width: 500px) {
+  .connect-wallet-title {
+    font-size: 25px;
+  }
+  .connect-wallet .ant-modal-body {
+    padding: 18px;
+  }
+  .wallet-flex .item-text {
+    font-size: 18px;
+  }
+  .wallet-item {
+    width: 100%;
+  }
+}
